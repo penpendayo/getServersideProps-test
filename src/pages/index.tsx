@@ -21,6 +21,9 @@ export default function Home() {
       <main>
       <Link href="/aaa">Home</Link>
       <button onClick={()=>router.push("/aaa")}>Home</button>
+<br />
+      <Link href="/users/agergaergrea">users/gaegaerg</Link>
+      <button onClick={()=>router.push("/users/agergaergrea")}>users/gaegaerg</button>
       </main>
     </>
   )
