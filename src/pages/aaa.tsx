@@ -1,3 +1,4 @@
+import { GetServerSideProps } from "next";
 import React from "react";
 
 const index = ({ item }: any) => {
@@ -7,7 +8,7 @@ const index = ({ item }: any) => {
 
 export default index;
 
-export const getServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   //以下のconsole.logはブラウザで実行されない
   console.log("hello next.js");
   return {
