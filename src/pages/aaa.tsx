@@ -13,7 +13,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   console.log("hello next.js");
   return {
     props: {
-      item: "hello world",
+      item: new Date().toISOString(),
     },
   };
 };
